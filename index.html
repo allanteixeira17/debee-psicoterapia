@@ -469,13 +469,8 @@
             // Abre o WhatsApp em uma nova aba
             window.open(whatsappUrl, '_blank');
 
-            // Gatilha o download direto do PDF
-            const link = document.createElement('a');
-            link.href = pdfUrl;
-            link.download = 'Ebook - Não é Birra - Déborah Carvalho.pdf';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
+            // Redireciona a página atual para o PDF
+            window.location.href = pdfUrl;
         }
     </script>
 </body>
